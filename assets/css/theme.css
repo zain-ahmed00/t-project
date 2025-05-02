@@ -1,0 +1,270 @@
+
+/* Theme color variables */
+:root {
+  /* Primary theme colors */
+  --theme-primary: #A08963;
+  --theme-primary-dark: #8A7352;
+  --theme-primary-light: #BBA583;
+  --theme-secondary: #C9B194;
+  --theme-accent: #706D54;
+  
+  /* Text colors */
+  --theme-text-dark: #4A4638;
+  --theme-text-light: #8A8778;
+  
+  /* Themed icon and button styles */
+  --theme-icon-fill: #A08963;
+  --theme-icon-stroke: #8A7352;
+  --theme-button-bg: #A08963;
+  --theme-button-text: #FFFFFF;
+  --theme-button-hover: #8A7352;
+}
+
+/* Button styles */
+.btn-theme-primary {
+  background-color: var(--theme-primary);
+  color: white;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.btn-theme-primary:hover, 
+.btn-theme-primary:focus, 
+.btn-theme-primary:active {
+  background-color: var(--theme-primary-dark);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-outline-theme-primary {
+  border: 1px solid var(--theme-primary);
+  color: var(--theme-primary);
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-theme-primary:hover, 
+.btn-outline-theme-primary:focus, 
+.btn-outline-theme-primary:active {
+  background-color: var(--theme-primary);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Text color utilities */
+.text-theme-primary {
+  color: var(--theme-primary) !important;
+}
+
+.text-theme-accent {
+  color: var(--theme-accent) !important;
+}
+
+.text-theme-secondary {
+  color: var(--theme-secondary) !important;
+}
+
+/* Background color utilities */
+.bg-theme-primary {
+  background-color: var(--theme-primary) !important;
+}
+
+.bg-theme-primary-light {
+  background-color: var(--theme-primary-light) !important;
+}
+
+.bg-theme-secondary {
+  background-color: var(--theme-secondary) !important;
+}
+
+.bg-theme-accent {
+  background-color: var(--theme-accent) !important;
+}
+
+/* Border color utilities */
+.border-theme-primary {
+  border-color: var(--theme-primary) !important;
+}
+
+.border-theme-secondary {
+  border-color: var(--theme-secondary) !important;
+}
+
+/* Icons with theme colors */
+.icon-theme-primary {
+  color: var(--theme-primary);
+}
+
+/* Gradient backgrounds */
+.bg-theme-gradient {
+  background: linear-gradient(135deg, var(--theme-primary), var(--theme-secondary));
+  color: white;
+}
+
+/* Form Controls */
+.form-control:focus {
+  border-color: var(--theme-primary);
+  box-shadow: 0 0 0 0.25rem rgba(160, 137, 99, 0.25);
+}
+
+/* Badges */
+.badge.bg-theme-primary {
+  background-color: var(--theme-primary) !important;
+}
+
+/* Wishlist & Cart Indicators */
+.wishlist-count, .cart-count {
+  top: -5px !important;
+  font-size: 0.6rem !important;
+  padding: 0.25em 0.5em !important;
+}
+
+/* Button animation */
+.btn-animated {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-animated:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: all 0.6s ease;
+}
+
+.btn-animated:hover:after {
+  left: 100%;
+}
+
+/* Card hover effects */
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Premium card styles */
+.premium-card {
+  border-radius: 0.75rem;
+  border: 1px solid rgba(201, 177, 148, 0.3);
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  height: 100%;
+  background-color: white;
+}
+
+.premium-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(160, 137, 99, 0.15);
+}
+
+/* Product card hover animation */
+.product-card-hover .product-image img {
+  transition: transform 0.5s ease;
+}
+
+.product-card-hover:hover .product-image img {
+  transform: scale(1.08);
+}
+
+/* Filter tag animation */
+.filter-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.35rem 0.75rem;
+  background-color: rgba(201, 177, 148, 0.2);
+  border-radius: 2rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--theme-accent);
+  transition: all 0.3s ease;
+  margin: 0.25rem;
+}
+
+.filter-tag:hover {
+  background-color: rgba(201, 177, 148, 0.4);
+}
+
+.filter-tag .close-icon {
+  margin-left: 0.5rem;
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.filter-tag:hover .close-icon {
+  opacity: 1;
+}
+
+/* Improved pagination */
+.pagination .page-item .page-link {
+  color: var(--theme-primary);
+  border-color: rgba(160, 137, 99, 0.2);
+  transition: all 0.3s ease;
+}
+
+.pagination .page-item.active .page-link,
+.pagination .page-item .page-link:hover {
+  background-color: var(--theme-primary);
+  border-color: var(--theme-primary);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(160, 137, 99, 0.2);
+}
+
+/* Section titles with underline */
+.section-title-underline {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+.section-title-underline::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background-color: var(--theme-primary);
+  transition: width 0.3s ease;
+}
+
+.section-title-underline:hover::after {
+  width: 100%;
+}
+
+/* Focus ring for accessibility */
+.focus-ring:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(160, 137, 99, 0.5);
+}
+
+/* Custom scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(201, 177, 148, 0.1);
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--theme-primary);
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: var(--theme-primary-dark);
+}

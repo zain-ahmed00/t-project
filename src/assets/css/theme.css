@@ -1,0 +1,93 @@
+
+/* Update theme color variables */
+:root {
+  /* Primary theme colors */
+  --theme-primary: #A08963;
+  --theme-primary-dark: #8A7352;
+  --theme-primary-light: #BBA583;
+  --theme-secondary: #C9B194;
+  --theme-accent: #706D54;
+  
+  /* Text colors */
+  --theme-text-dark: #4A4638;
+  --theme-text-light: #8A8778;
+  
+  /* Themed icon and button styles */
+  --theme-icon-fill: #A08963;
+  --theme-icon-stroke: #8A7352;
+  --theme-button-bg: #A08963;
+  --theme-button-text: #FFFFFF;
+  --theme-button-hover: #8A7352;
+}
+
+/* Themed icon styles */
+.theme-icon {
+  fill: var(--theme-icon-fill);
+  stroke: var(--theme-icon-stroke);
+}
+
+.theme-icon-badge {
+  background-color: var(--theme-primary);
+  color: white;
+}
+
+/* Themed button styles */
+.theme-button {
+  background-color: var(--theme-button-bg);
+  color: var(--theme-button-text);
+  transition: background-color 0.3s ease;
+}
+
+.theme-button:hover {
+  background-color: var(--theme-button-hover);
+}
+
+/* Additional color utility classes */
+.text-theme-primary {
+  color: var(--theme-primary);
+}
+
+.text-theme-accent {
+  color: var(--theme-accent);
+}
+
+.bg-theme-primary {
+  background-color: var(--theme-primary);
+}
+
+.border-theme-primary {
+  border-color: var(--theme-primary);
+}
+
+/* Enhanced product card styles */
+.product-card-hover {
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+}
+
+.product-card-hover:hover {
+  transform: translateY(-8px) !important;
+  box-shadow: 0 15px 30px rgba(160, 137, 99, 0.15);
+}
+
+.product-card-hover .product-image img {
+  transition: transform 0.5s ease;
+}
+
+.product-card-hover:hover .product-image img {
+  transform: scale(1.08);
+}
+
+/* Product overlay on hover */
+.product-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+  transition: opacity 0.3s ease;
+}
+
+.product-card-hover:hover .product-overlay {
+  opacity: 0.3 !important;
+}

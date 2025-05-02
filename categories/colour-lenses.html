@@ -1,0 +1,286 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colour Lenses - Lensyz</title>
+    <meta name="description" content="Explore our collection of stunning color contact lenses" />
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/theme.css">
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow-sm">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">
+          <span class="fw-bold text-theme-primary">LENSYZ</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Products
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                <li><a class="dropdown-item" href="../products.html">All Products</a></li>
+                <li><a class="dropdown-item active" href="colour-lenses.html">Colour Lenses</a></li>
+                <li><a class="dropdown-item" href="eyesight-lens.html">Eyesight Lens</a></li>
+                <li><a class="dropdown-item" href="travel-kits.html">Travel Kits</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../contact.html">Contact</a>
+            </li>
+          </ul>
+          <div class="d-flex align-items-center">
+            <div class="search-icon me-3">
+              <a href="../search.html" class="text-dark">
+                <i class="fas fa-search"></i>
+              </a>
+            </div>
+            <div class="wishlist-icon me-3 position-relative">
+              <a href="../wishlist.html" class="text-dark">
+                <i class="fas fa-heart text-theme-primary"></i>
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-theme-primary wishlist-count">0</span>
+              </a>
+            </div>
+            <div class="cart-icon position-relative">
+              <a href="../cart.html" class="text-dark">
+                <i class="fas fa-shopping-cart text-theme-primary"></i>
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-theme-primary cart-count">0</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Category Hero Banner -->
+    <section class="category-banner pt-5 mt-5">
+      <div class="position-relative overflow-hidden">
+        <div class="overlay bg-dark position-absolute w-100 h-100" style="opacity: 0.5;"></div>
+        <img src="../assets/images/banners/category-color-lenses.jpg" alt="Colour Lenses" class="w-100" style="height: 300px; object-fit: cover; object-position: center;">
+        <div class="container position-absolute top-50 start-50 translate-middle text-center text-white">
+          <h1 class="display-4 fw-bold">Colour Lenses</h1>
+          <p class="lead">Transform your look with our premium colour contact lenses</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Category Description -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 offset-lg-2 text-center">
+            <h2 class="fw-bold mb-4 text-theme-primary">Enhance Your Natural Beauty</h2>
+            <p class="lead mb-4">Our color lenses are designed with both style and comfort in mind. Each pair is crafted using breathable materials and vibrant pigmentation to give you a natural-looking color transformation that lasts all day.</p>
+            <p>Whether you're looking for a subtle enhancement or a bold new look, our collection of color lenses offers something for every style and occasion. All of our lenses are FDA-approved and designed for maximum comfort and breathability.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Category Products -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center fw-bold mb-5 text-theme-primary">Explore Our Colour Lenses</h2>
+        
+        <div class="row g-4 colour-lenses-container">
+          <!-- Products will be loaded dynamically -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="py-5">
+      <div class="container">
+        <h2 class="text-center fw-bold mb-5 text-theme-primary">Why Choose Our Colour Lenses</h2>
+        
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="text-center">
+              <div class="mb-3 bg-theme-primary-light p-3 d-inline-block rounded-circle">
+                <i class="fas fa-eye fa-2x text-theme-primary"></i>
+              </div>
+              <h3 class="h5 fw-bold">Natural Look</h3>
+              <p>Our lenses are designed to blend seamlessly with your natural eye color, creating a realistic and stunning effect.</p>
+            </div>
+          </div>
+          
+          <div class="col-md-4">
+            <div class="text-center">
+              <div class="mb-3 bg-theme-primary-light p-3 d-inline-block rounded-circle">
+                <i class="fas fa-heart fa-2x text-theme-primary"></i>
+              </div>
+              <h3 class="h5 fw-bold">Comfort All Day</h3>
+              <p>Made with high-quality materials that allow oxygen to reach your eyes, ensuring comfort for extended wear.</p>
+            </div>
+          </div>
+          
+          <div class="col-md-4">
+            <div class="text-center">
+              <div class="mb-3 bg-theme-primary-light p-3 d-inline-block rounded-circle">
+                <i class="fas fa-shield-alt fa-2x text-theme-primary"></i>
+              </div>
+              <h3 class="h5 fw-bold">UV Protection</h3>
+              <p>Many of our color lenses include UV protection to help shield your eyes from harmful sun rays.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Care Guide -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <h2 class="fw-bold mb-4 text-theme-primary">Lens Care Guide</h2>
+            <p class="mb-4">Proper care of your colored contact lenses is essential for maintaining eye health and extending the life of your lenses.</p>
+            
+            <ul class="list-unstyled mb-4">
+              <li class="mb-3">
+                <div class="d-flex">
+                  <div class="bg-theme-primary text-white rounded-circle p-2 me-3" style="width: 36px; height: 36px; text-align: center; line-height: 1;">1</div>
+                  <div>
+                    <h5 class="fw-semibold">Always wash your hands</h5>
+                    <p>Before handling your lenses, wash your hands thoroughly with soap and dry them with a lint-free towel.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="mb-3">
+                <div class="d-flex">
+                  <div class="bg-theme-primary text-white rounded-circle p-2 me-3" style="width: 36px; height: 36px; text-align: center; line-height: 1;">2</div>
+                  <div>
+                    <h5 class="fw-semibold">Use proper solution</h5>
+                    <p>Only use contact lens solution recommended by your eye care professional. Never use water or saliva.</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="d-flex">
+                  <div class="bg-theme-primary text-white rounded-circle p-2 me-3" style="width: 36px; height: 36px; text-align: center; line-height: 1;">3</div>
+                  <div>
+                    <h5 class="fw-semibold">Replace on schedule</h5>
+                    <p>Follow the replacement schedule prescribed for your lenses, whether they're daily, biweekly, or monthly.</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            
+            <a href="#" class="btn btn-theme-primary">Download Full Care Guide</a>
+          </div>
+          <div class="col-lg-6">
+            <img src="../assets/images/lens-care-guide.jpg" alt="Lens Care Guide" class="img-fluid rounded shadow">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <h5 class="fw-bold mb-4">LENSYZ</h5>
+            <p>Providing premium quality lenses and eyewear accessories since 2010. Your vision is our priority.</p>
+            <div class="social-icons mt-4">
+              <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="text-white"><i class="fab fa-pinterest"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6">
+            <h5 class="fw-bold mb-4">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="../index.html" class="text-white text-decoration-none">Home</a></li>
+              <li class="mb-2"><a href="../products.html" class="text-white text-decoration-none">Products</a></li>
+              <li class="mb-2"><a href="../about.html" class="text-white text-decoration-none">About Us</a></li>
+              <li class="mb-2"><a href="../contact.html" class="text-white text-decoration-none">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h5 class="fw-bold mb-4">Contact Us</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> 123 Vision Street, City, Country</li>
+              <li class="mb-2"><i class="fas fa-phone me-2"></i> +1 234 567 890</li>
+              <li class="mb-2"><i class="fas fa-envelope me-2"></i> info@lensyz.com</li>
+              <li class="mb-2"><i class="fas fa-clock me-2"></i> Mon-Fri: 9am - 6pm</li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h5 class="fw-bold mb-4">Payment Methods</h5>
+            <div class="payment-icons">
+              <i class="fab fa-cc-visa fa-2x me-2"></i>
+              <i class="fab fa-cc-mastercard fa-2x me-2"></i>
+              <i class="fab fa-cc-amex fa-2x me-2"></i>
+              <i class="fab fa-cc-paypal fa-2x"></i>
+            </div>
+            <h5 class="fw-bold mb-2 mt-4">Secure Shopping</h5>
+            <p class="small">We use the latest security measures to ensure your information is safe.</p>
+          </div>
+        </div>
+        <hr class="my-4 bg-light">
+        <div class="row">
+          <div class="col-md-6 text-center text-md-start">
+            <p class="mb-0">&copy; 2023 Lensyz. All rights reserved.</p>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item"><a href="#" class="text-white text-decoration-none small">Privacy Policy</a></li>
+              <li class="list-inline-item"><span class="text-muted mx-2">|</span></li>
+              <li class="list-inline-item"><a href="#" class="text-white text-decoration-none small">Terms of Service</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Toast Notifications -->
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+      <div id="toastNotification" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+          <strong class="me-auto toast-title">Notification</strong>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+          This is a notification message.
+        </div>
+      </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="btn btn-theme-primary btn-lg back-to-top" role="button"><i class="fas fa-chevron-up"></i></a>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Custom JS -->
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/cart.js"></script>
+    <script src="../assets/js/category.js"></script>
+  </body>
+</html>

@@ -1,0 +1,245 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Updated neutral palette with beige/gold tones */
+    --background: 45 15% 86%;
+    --foreground: 60 14% 38%;
+
+    --card: 45 15% 86%;
+    --card-foreground: 60 14% 38%;
+
+    --popover: 45 15% 86%;
+    --popover-foreground: 60 14% 38%;
+
+    /* Primary color - soft gold/brown */
+    --primary: 36 28% 47%;
+    --primary-foreground: 45 15% 86%;
+
+    /* Secondary color - soft beige */
+    --secondary: 37 27% 69%;
+    --secondary-foreground: 60 14% 38%;
+
+    /* Muted color - softer beige */
+    --muted: 0 0% 86%;
+    --muted-foreground: 60 14% 38%;
+
+    /* Accent color - soft brown/olive */
+    --accent: 60 14% 38%;
+    --accent-foreground: 45 15% 86%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 45 15% 86%;
+
+    --border: 37 27% 69%;
+    --input: 37 27% 69%;
+    --ring: 36 28% 47%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 45 15% 86%;
+    --sidebar-foreground: 60 14% 38%;
+    --sidebar-primary: 36 28% 47%;
+    --sidebar-primary-foreground: 45 15% 86%;
+    --sidebar-accent: 60 14% 38%;
+    --sidebar-accent-foreground: 45 15% 86%;
+    --sidebar-border: 37 27% 69%;
+    --sidebar-ring: 36 28% 47%;
+  }
+
+  body {
+    @apply bg-background text-foreground font-['Montserrat',sans-serif];
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+}
+
+/* Animation classes */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+  from { transform: translateX(-20px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes scaleUp {
+  from { transform: scale(0.95); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+@keyframes btnHover {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes rotateIn {
+  from { transform: rotateY(-10deg); opacity: 0; }
+  to { transform: rotateY(0); opacity: 1; }
+}
+
+@keyframes slideFromBottom {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes shimmer {
+  0% { background-position: -100% 0; }
+  100% { background-position: 100% 0; }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+.slide-in {
+  animation: slideIn 0.5s ease-out forwards;
+}
+
+.scale-up {
+  animation: scaleUp 0.3s ease-out forwards;
+}
+
+.pulse-animation {
+  animation: pulse 2s infinite;
+}
+
+.btn-hover-animation:hover {
+  animation: btnHover 1s infinite;
+}
+
+.rotate-in {
+  animation: rotateIn 0.6s ease-out forwards;
+}
+
+.slide-from-bottom {
+  animation: slideFromBottom 0.5s ease-out forwards;
+}
+
+.shimmer-effect {
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0) 100%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+.product-card-hover {
+  transition: all 0.4s ease;
+}
+
+.product-card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(170, 143, 105, 0.2);
+}
+
+/* Premium Button Style */
+.premium-btn {
+  @apply bg-primary text-primary-foreground rounded-md px-4 py-2 transform transition-all duration-300 
+    hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/20 hover:scale-[1.02] active:scale-[0.98]
+    focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2;
+}
+
+/* Premium Card Style */
+.premium-card {
+  @apply bg-card rounded-lg overflow-hidden border border-secondary transition-all duration-300
+    hover:shadow-xl hover:shadow-primary/10 hover:border-primary/30;
+}
+
+/* Navbar Animations */
+.navbar-premium {
+  @apply transition-all duration-300;
+}
+
+.navbar-premium.scrolled {
+  @apply bg-background/95 backdrop-blur-md shadow-md shadow-primary/10;
+}
+
+/* Responsive adjustments */
+.container {
+  @apply px-3 sm:px-4 md:px-6 mx-auto;
+  max-width: 1280px;
+}
+
+/* Mobile-first product grid - 2 products per row */
+.grid-cols-1 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (min-width: 640px) {
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* Font size responsiveness */
+h1 {
+  @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl;
+}
+
+h2 {
+  @apply text-xl sm:text-2xl md:text-3xl;
+}
+
+h3 {
+  @apply text-lg sm:text-xl md:text-2xl;
+}
+
+p {
+  @apply text-sm sm:text-base;
+}
+
+/* Better touch targets for mobile */
+button, 
+.btn, 
+a.btn, 
+input[type="button"], 
+input[type="submit"] {
+  @apply min-h-[40px] sm:min-h-[44px];
+}
+
+/* Improved spacing for mobile */
+.card, 
+.section, 
+.container > div {
+  @apply my-4 sm:my-6 md:my-8;
+}
+
+/* Responsive table adjustments */
+table {
+  @apply w-full overflow-x-auto block md:table;
+}
+
+/* Responsive padding for sections */
+.section-padding {
+  @apply py-6 sm:py-8 md:py-10 lg:py-16;
+}
+
+/* Better touch targets for filter items */
+.filter-tag,
+.filter-option,
+.filter-checkbox label {
+  @apply py-2 px-3;
+}

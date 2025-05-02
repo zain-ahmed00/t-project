@@ -1,0 +1,210 @@
+
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Crystal Blue Contact Lenses",
+      "price": 49.99,
+      "imageUrl": "assets/images/products/blue-lens.jpg",
+      "rating": 4.5,
+      "category": "colour-lenses",
+      "brand": "Lensyz Premium",
+      "color": "blue",
+      "isFeatured": true,
+      "description": "Transform your look with our Crystal Blue lenses that provide natural-looking color enhancement.",
+      "features": ["Natural Look", "Comfortable Fit", "UV Protection"]
+    },
+    {
+      "id": "2",
+      "name": "Emerald Green Lenses",
+      "price": 59.99,
+      "imageUrl": "assets/images/products/green-lens.jpg",
+      "rating": 5,
+      "category": "colour-lenses",
+      "brand": "Lensyz Premium",
+      "color": "green",
+      "isNew": true,
+      "description": "Our Emerald Green lenses offer a striking, vibrant color that's perfect for any occasion.",
+      "features": ["Vivid Color", "Breathable", "All-Day Comfort"]
+    },
+    {
+      "id": "3",
+      "name": "Hazel Brown Lenses",
+      "price": 44.99,
+      "imageUrl": "assets/images/products/brown-lens.jpg",
+      "rating": 4,
+      "category": "colour-lenses",
+      "brand": "Lensyz Classic",
+      "color": "brown",
+      "isFeatured": true,
+      "description": "Enhance your natural eye color with our subtle Hazel Brown lenses for a warm, inviting look.",
+      "features": ["Natural Enhancement", "Silicone Hydrogel", "Moisture Lock"]
+    },
+    {
+      "id": "4",
+      "name": "Honey Amber Lenses",
+      "price": 54.99,
+      "imageUrl": "assets/images/products/amber-lens.jpg",
+      "rating": 4.5,
+      "category": "colour-lenses",
+      "brand": "Lensyz Premium",
+      "color": "amber",
+      "description": "Our Honey Amber lenses provide a warm, golden tone that blends beautifully with any eye color.",
+      "features": ["Subtle Effect", "Premium Material", "Long-Lasting Color"]
+    },
+    {
+      "id": "5",
+      "name": "Travel Solution Kit",
+      "price": 29.99,
+      "imageUrl": "assets/images/products/travel-kit-basic.jpg",
+      "rating": 4.5,
+      "category": "travel-kits",
+      "brand": "Lensyz Essentials",
+      "isFeatured": true,
+      "description": "Our complete Travel Solution Kit has everything you need to care for your lenses on the go.",
+      "features": ["Compact Case", "Solution Bottle", "Mirror", "Lens Case"]
+    },
+    {
+      "id": "6",
+      "name": "Daily Clear Lenses -0.5",
+      "price": 34.99,
+      "imageUrl": "assets/images/products/clear-lens-daily.jpg",
+      "rating": 4,
+      "category": "eyesight-lens",
+      "brand": "Lensyz Vision",
+      "description": "These daily clear lenses with -0.5 correction provide crisp, comfortable vision all day long.",
+      "features": ["Daily Disposable", "UV Protection", "Crystal Clear Vision"]
+    },
+    {
+      "id": "7",
+      "name": "Monthly Clear Lenses -1.0",
+      "price": 39.99,
+      "imageUrl": "assets/images/products/clear-lens-monthly.jpg",
+      "rating": 4.5,
+      "category": "eyesight-lens",
+      "brand": "Lensyz Vision",
+      "isNew": true,
+      "description": "Our monthly clear lenses with -1.0 correction offer excellent value and long-lasting comfort.",
+      "features": ["Monthly Replacement", "High Oxygen Flow", "Anti-Deposit"]
+    },
+    {
+      "id": "8",
+      "name": "Ocean Blue Daily Lenses",
+      "price": 64.99,
+      "imageUrl": "assets/images/products/ocean-blue-lens.jpg",
+      "rating": 5,
+      "category": "colour-lenses",
+      "brand": "Lensyz Premium",
+      "color": "blue",
+      "isNew": true,
+      "description": "Experience the deep blue color of our Ocean Blue lenses, designed for comfort and stunning looks.",
+      "features": ["Intense Color", "Daily Comfort", "Natural Blend Technology"]
+    },
+    {
+      "id": "9",
+      "name": "Arctic Gray Lenses",
+      "price": 62.99,
+      "imageUrl": "assets/images/products/gray-lens.jpg",
+      "rating": 4.5,
+      "category": "colour-lenses",
+      "brand": "Lensyz Premium",
+      "color": "gray",
+      "description": "Our Arctic Gray lenses provide a cool, mysterious look with exceptional comfort.",
+      "features": ["Smoky Gray Effect", "Hydration Technology", "Natural Look"]
+    },
+    {
+      "id": "10",
+      "name": "Deluxe Lens Care Kit",
+      "price": 42.99,
+      "imageUrl": "assets/images/products/deluxe-kit.jpg",
+      "rating": 5,
+      "category": "travel-kits",
+      "brand": "Lensyz Essentials",
+      "isFeatured": true,
+      "description": "Our Deluxe Lens Care Kit includes premium solution, cases, and all accessories for perfect lens maintenance.",
+      "features": ["Premium Solution", "Multi-Purpose Case", "Professional Tools", "Travel Friendly"]
+    },
+    {
+      "id": "11",
+      "name": "Monthly Clear Lenses -2.0",
+      "price": 39.99,
+      "imageUrl": "assets/images/products/clear-lens-monthly-2.jpg",
+      "rating": 4,
+      "category": "eyesight-lens",
+      "brand": "Lensyz Vision",
+      "description": "These monthly clear lenses with -2.0 correction provide crystal-clear vision with all-day comfort.",
+      "features": ["High Definition Vision", "Anti-Blur Technology", "Moisture Retention"]
+    },
+    {
+      "id": "12",
+      "name": "Violet Dream Lenses",
+      "price": 69.99,
+      "imageUrl": "assets/images/products/violet-lens.jpg",
+      "rating": 4.5,
+      "category": "colour-lenses",
+      "brand": "Lensyz Premium",
+      "color": "violet",
+      "isNew": true,
+      "description": "Make a statement with our vibrant Violet Dream lenses for a truly unique and enchanting look.",
+      "features": ["Bold Color", "Smooth Comfort", "Special Effect Enhancement"]
+    },
+    {
+      "id": "13",
+      "name": "Daily Clear Lenses -1.5",
+      "price": 34.99,
+      "imageUrl": "assets/images/products/clear-lens-daily-2.jpg",
+      "rating": 4,
+      "category": "eyesight-lens",
+      "brand": "Lensyz Vision",
+      "description": "These daily clear lenses with -1.5 correction are perfect for those who need reliable vision correction.",
+      "features": ["Fresh Daily Wear", "Thin Profile", "Ultra-Comfort Design"]
+    },
+    {
+      "id": "14",
+      "name": "Mini Travel Kit",
+      "price": 19.99,
+      "imageUrl": "assets/images/products/mini-travel-kit.jpg",
+      "rating": 4,
+      "category": "travel-kits",
+      "brand": "Lensyz Essentials",
+      "description": "Our compact Mini Travel Kit is perfect for weekend trips, with everything you need in a convenient size.",
+      "features": ["Ultra Compact", "Travel Solution", "Easy Organization"]
+    },
+    {
+      "id": "15",
+      "name": "Honey Gold Lenses",
+      "price": 59.99,
+      "imageUrl": "assets/images/products/gold-lens.jpg",
+      "rating": 4.5,
+      "category": "colour-lenses",
+      "brand": "Lensyz Premium",
+      "color": "gold",
+      "isFeatured": true,
+      "description": "Our Honey Gold lenses create a warm, subtle enhancement that brightens your natural eye color.",
+      "features": ["Golden Warmth", "Natural Blend", "Impressive Depth"]
+    }
+  ],
+  
+  "categories": [
+    { "id": "colour-lenses", "name": "Color Lenses", "count": 8 },
+    { "id": "eyesight-lens", "name": "Eyesight Lenses", "count": 4 },
+    { "id": "travel-kits", "name": "Travel Kits", "count": 3 }
+  ],
+  
+  "brands": [
+    { "id": "lensyz-premium", "name": "Lensyz Premium", "count": 9 },
+    { "id": "lensyz-classic", "name": "Lensyz Classic", "count": 1 },
+    { "id": "lensyz-vision", "name": "Lensyz Vision", "count": 3 },
+    { "id": "lensyz-essentials", "name": "Lensyz Essentials", "count": 2 }
+  ],
+  
+  "colors": [
+    { "id": "blue", "name": "Blue", "count": 2 },
+    { "id": "green", "name": "Green", "count": 1 },
+    { "id": "brown", "name": "Brown", "count": 1 },
+    { "id": "amber", "name": "Amber", "count": 1 },
+    { "id": "gray", "name": "Gray", "count": 1 },
+    { "id": "violet", "name": "Violet", "count": 1 },
+    { "id": "gold", "name": "Gold", "count": 1 }
+  ]
+}
