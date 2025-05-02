@@ -1,1 +1,12 @@
-<p>layout works!</p>
+
+<div class="app-layout">
+  <header class="app-header">
+    <slot name="header"></slot>
+  </header>
+  <main class="app-content">
+    <slot></slot>
+  </main>
+  <footer class="app-footer">
+    <slot name="footer"></slot>
+  </footer>
+</div>
