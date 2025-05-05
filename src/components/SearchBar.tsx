@@ -1,5 +1,5 @@
 
-// SearchBar.tsx - Simplified version without suggestions dropdown
+// SearchBar.tsx - Restoring version with suggestions dropdown
 import React, { useRef } from 'react';
 import { Search as SearchIcon, ArrowRight, X } from 'lucide-react';
 import { Input } from '@/components/ui/input';
